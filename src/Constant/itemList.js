@@ -1,4 +1,4 @@
-export default items = [
+const items = [
     {
         image: '',
         name: 'Cucumber',
@@ -53,7 +53,7 @@ export default items = [
         category: 'vagitable',
         price: 10
     },
-    
+
     {
         image: '',
         name: 'grapes',
@@ -91,3 +91,5 @@ export default items = [
         price: 50
     },
 ]
+
+export default items;
