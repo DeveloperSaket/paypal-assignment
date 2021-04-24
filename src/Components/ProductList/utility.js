@@ -1,16 +1,15 @@
 export function current(list = []) {
-    const length = list.length();
+    const length = list.length;
     if (length === 0) {
         return { list, pointer: -1 };
     }
     const indexPointer = (length > 2) ? 1 : 0;
+    return indexPointer === 0 ? { list, pointer: indexPointer } : { list: list.slice(0, 3), pointer: indexPointer };
+};
 
-    return indexPointer === 0 ? { list, pointer: indexPointer } : { list: list.slice(0, 2), pointer: indexPointer };
-}
-
-export function prev(list = [], indexPointer) {
+export function prev(list = [], currentIndexPointer) {
     const length = list.length();
-    const indexPointer = indexPointer - 1;
+    const indexPointer = currentIndexPointer - 1;
 
     if (indexPointer === -1) {
         return false; // no change required
@@ -25,9 +24,9 @@ export function prev(list = [], indexPointer) {
     return { list: list.slice(indexPointer + 1, indexPointer + 4), pointer: indexPointer };
 }
 
-export function next(list, indexPointer) {
+export function next(list, currentIndexPointer) {
     const length = list.length();
-    const indexPointer = indexPointer + 1;
+    const indexPointer = currentIndexPointer + 1;
 
     if (indexPointer === length) {
         return false; // no change required

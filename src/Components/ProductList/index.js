@@ -1,10 +1,12 @@
 import './index.css';
 import ItemList from "../../Constant/itemList";
 import React, { useState } from 'react';
+import Carousel from "../Carousel";
+import { current } from "./utility";
 
 function ProductList() {
     const [category, selectCategory] = useState('fruits');
-
+    console.log(current(ItemList.filter(i => i.category === category)), 'current(ItemList.filter(i => i.category === category))');
     return (
         <div className="Container">
             <header className="Category">
@@ -14,7 +16,7 @@ function ProductList() {
                 </select>
             </header>
             <div className="Carousel">
-                {ItemList.filter(i => i.category === category).map(i => <div className='test-center'><div>{i.name}</div>{i.price}<div></div> </div>)}
+                <Carousel itemObj={current(ItemList.filter(i => i.category === category))} />
             </div>
         </div>
     );
