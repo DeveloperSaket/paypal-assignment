@@ -1,17 +1,20 @@
 import './index.css';
 import ItemList from "../../Constant/itemList";
+import React, { useState } from 'react';
 
 function ProductList() {
+    const [category, selectCategory] = useState('fruits');
+
     return (
         <div className="Container">
             <header className="Category">
-                <select>
-                    <option>Fruits</option>
-                    <option>Vagitable</option>
+                <select onChange={(e) => selectCategory(e.target.value)}>
+                    <option value='fruits'>Fruits</option>
+                    <option value='vagitable'>Vagitable</option>
                 </select>
             </header>
             <div className="Carousel">
-                {ItemList.filter(i => i.category === 'fruits').map(i => <div>{i.name}</div>)}
+                {ItemList.filter(i => i.category === category).map(i => <div>{i.name}</div>)}
             </div>
         </div>
     );
