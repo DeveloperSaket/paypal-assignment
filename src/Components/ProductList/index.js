@@ -14,7 +14,7 @@ function ProductList() {
                 </select>
             </header>
             <div className="Carousel">
-                {ItemList.filter(i => i.category === category).map(i => <div>{i.name}</div>)}
+                {ItemList.filter(i => i.category === category).map(i => <div className='test-center'><div>{i.name}</div>{i.price}<div></div> </div>)}
             </div>
         </div>
     );
