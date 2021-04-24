@@ -11,3 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+select{
+  min-width: 7em;
+  font: 1em sans-serif;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+}
+
+option{
+  /* background-color: violet; */
+  color: black;
+}
