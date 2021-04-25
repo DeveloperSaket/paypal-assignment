@@ -10,7 +10,7 @@ export function current(list = []) {
 export function prev(list = [], currentIndexPointer) {
     const length = list.length;
     const indexPointer = currentIndexPointer - 1;
-    if (length > 3) {
+    if (length > 2) {
         let lst = [];
         switch (indexPointer) {
             case 0:
@@ -28,14 +28,12 @@ export function prev(list = [], currentIndexPointer) {
     } else {
 
     }
-
-    // return { list: list.slice(indexPointer, indexPointer + 3), pointer: indexPointer };
 }
 
 export function next(list, currentIndexPointer) {
     const length = list.length;
     const indexPointer = currentIndexPointer + 1;
-    if (length > 3) {
+    if (length > 2) {
         let lst = [];
         switch (indexPointer) {
             case length - 1:

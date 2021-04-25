@@ -20,6 +20,7 @@ function ProductList() {
                 }}>
                     <option value='fruits'>Fruits</option>
                     <option value='vagitable'>Vagitable</option>
+                    <option value='herbs'>Herbs</option>
                 </select>
             </header>
             <div className="Carousel">

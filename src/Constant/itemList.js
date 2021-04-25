@@ -90,6 +90,24 @@ const items = [
         category: 'fruits',
         price: 50
     },
+    {
+        image: '',
+        name: 'Tulsi',
+        category: 'herbs',
+        price: 59
+    },
+    {
+        image: '',
+        name: 'Turmeric',
+        category: 'herbs',
+        price: 75
+    },
+    {
+        image: '',
+        name: 'Alo-Juice',
+        category: 'herbs',
+        price: 150
+    },
 ]
 
 export default items;
