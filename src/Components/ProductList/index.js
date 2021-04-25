@@ -5,14 +5,18 @@ import Carousel from "../Carousel";
 import { current, next, prev } from "./utility";
 
 function ProductList() {
-    const [category, selectCategory] = useState('fruits');
+    const defaultCategory = 'fruits';
+    const defaultList = ItemList.filter(i => i.category === defaultCategory);
+
+    const [filteredList, setFilteredList] = useState(defaultList);
     const [currentList, updateList] = useState(current(ItemList.filter(i => i.category === 'fruits')));
     return (
         <div className="Container">
             <header className="Category">
                 <select onChange={(e) => {
-                    selectCategory(e.target.value);
-                    updateList(current(ItemList.filter(i => i.category === e.target.value)))
+                    const newfilteredList = ItemList.filter(i => i.category === e.target.value);
+                    setFilteredList(newfilteredList);
+                    updateList(current(newfilteredList));
                 }}>
                     <option value='fruits'>Fruits</option>
                     <option value='vagitable'>Vagitable</option>
@@ -21,7 +25,7 @@ function ProductList() {
             <div className="Carousel">
                 <div>
                     <button onClick={() => {
-                        const itemObj = prev(ItemList.filter(i => i.category === category), currentList.pointer);
+                        const itemObj = prev(filteredList, currentList.pointer);
                         if (itemObj) {
                             updateList(itemObj)
                         }
@@ -30,7 +34,7 @@ function ProductList() {
                 <Carousel itemObj={currentList} />
                 <div>
                     <button onClick={() => {
-                        const itemObj = next(ItemList.filter(i => i.category === category), currentList.pointer);
+                        const itemObj = next(filteredList, currentList.pointer);
                         if (itemObj) {
                             updateList(itemObj)
                         }
