@@ -22,12 +22,6 @@ const getImage = (imgId) => {
     switch (imgId) {
         case 'alo':
             return Alo;
-        case 'fruits':
-            return fruits;
-        case 'fruits2':
-            return fruits2;
-        case 'fruits3':
-            return fruits3;
         case 'termeric':
             return termeric;
         case 'tulsi':
