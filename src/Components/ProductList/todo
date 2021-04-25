@@ -1,8 +1,8 @@
-1. Carousel should have clickable left and right arrows.
+1. Carousel should have clickable left and right arrows. [Done]
 
 2. Each item should have item image, item name, item price and item category. [Done]
 
-3. Only three items should be visible at any point of time.
+3. Only three items should be visible at any point of time. [Done]
 
 4. Each click on arrow should animate and slide the carousel item.
 

@@ -25,21 +25,21 @@ function ProductList() {
             </header>
             <div className="Carousel">
                 <div>
-                    <button onClick={() => {
+                    <button className='arrow' onClick={() => {
                         const itemObj = prev(filteredList, currentList.pointer);
                         if (itemObj) {
                             updateList(itemObj)
                         }
-                    }}>Prev</button>
+                    }}>&#8678;</button>
                 </div>
                 <Carousel itemObj={currentList} />
                 <div>
-                    <button onClick={() => {
+                    <button className='arrow' onClick={() => {
                         const itemObj = next(filteredList, currentList.pointer);
                         if (itemObj) {
                             updateList(itemObj)
                         }
-                    }}>Next</button>
+                    }}>&#8680;</button>
                 </div>
             </div>
         </div>
