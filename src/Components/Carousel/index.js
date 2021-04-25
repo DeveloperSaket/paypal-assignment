@@ -4,10 +4,10 @@ import PropTypes from "prop-types";
 // import Alo from "../../asset/alo.jpg";
 import getImage from "./image";
 
-function Carousel({ itemObj, filteredList }) {
+function Carousel({ itemObj, filteredList, toggel }) {
     const { list, pointer, type } = itemObj;
-    const classCards = pointer % 2 === 0 ? 'card-container-' + type : 'card-container-' + type + '2';
-    const classSelectedCard = pointer % 2 === 0 ? 'card-selected' : 'card-selected2';
+    const classCards = toggel ? 'card-container-' + type : 'card-container-' + type + '2';
+    const classSelectedCard = toggel ? 'card-selected' : 'card-selected2';
     return (
         <div className='container'>
             <div className={classCards}>

@@ -8,6 +8,7 @@ function ProductList() {
     const defaultCategory = 'fruits';
     const defaultList = ItemList.filter(i => i.category === defaultCategory);
 
+    const [toggel, switchToggle] = useState(false);
     const [filteredList, setFilteredList] = useState(defaultList);
     const [currentList, updateList] = useState(current(ItemList.filter(i => i.category === 'fruits')));
     return (
@@ -17,6 +18,7 @@ function ProductList() {
                     const newfilteredList = ItemList.filter(i => i.category === e.target.value);
                     setFilteredList(newfilteredList);
                     updateList(current(newfilteredList));
+                    switchToggle(!toggel);
                 }}>
                     <option value='fruits'>Fruits</option>
                     <option value='vagitable'>Vagitable</option>
@@ -28,16 +30,18 @@ function ProductList() {
                     <button className='arrow' onClick={() => {
                         const itemObj = prev(filteredList, currentList.pointer);
                         if (itemObj) {
-                            updateList(itemObj)
+                            updateList(itemObj);
+                            switchToggle(!toggel);
                         }
                     }}>&#8678;</button>
                 </div>
-                <Carousel itemObj={currentList} filteredList={filteredList} />
+                <Carousel itemObj={currentList} filteredList={filteredList} toggel={toggel}/>
                 <div>
                     <button className='arrow' onClick={() => {
                         const itemObj = next(filteredList, currentList.pointer);
                         if (itemObj) {
-                            updateList(itemObj)
+                            updateList(itemObj);
+                            switchToggle(!toggel);
                         }
                     }}>&#8680;</button>
                 </div>
