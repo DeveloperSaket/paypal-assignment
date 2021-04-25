@@ -1,109 +1,109 @@
 const items = [
     {
-        image: '',
+        image: 'veggie',
         name: 'Cucumber',
         category: 'vagitable',
         price: 10
     },
     {
-        image: '',
+        image: 'veggie2',
         name: 'Carrot',
         category: 'vagitable',
         price: 11
     },
     {
-        image: '',
+        image: 'veggie',
         name: 'Broccoli',
         category: 'vagitable',
         price: 14
     },
     {
-        image: '',
+        image: 'veggie2',
         name: 'Asparagus',
         category: 'vagitable',
         price: 17
     },
     {
-        image: '',
+        image: 'veggie',
         name: 'Cauliflower',
         category: 'vagitable',
         price: 19
     },
     {
-        image: '',
+        image: 'veggie2',
         name: 'Corn',
         category: 'vagitable',
         price: 11
     },
     {
-        image: '',
+        image: 'veggie',
         name: 'Cucumber',
         category: 'vagitable',
         price: 10
     },
     {
-        image: '',
+        image: 'veggie2',
         name: 'Eggplant',
         category: 'vagitable',
         price: 20
     },
     {
-        image: '',
+        image: 'veggie',
         name: 'Green Pepper',
         category: 'vagitable',
         price: 10
     },
 
     {
-        image: '',
+        image: 'fruits',
         name: 'Grapes',
         category: 'fruits',
         price: 57
     },
     {
-        image: '',
+        image: 'fruits2',
         name: 'Lime',
         category: 'fruits',
         price: 40
     },
     {
-        image: '',
+        image: 'fruits3',
         name: 'Lemon',
         category: 'fruits',
         price: 20
     },
     {
-        image: '',
+        image: 'fruits',
         name: 'Banana',
         category: 'fruits',
         price: 25
     },
     {
-        image: '',
+        image: 'fruits2',
         name: 'Apple',
         category: 'fruits',
         price: 150
     },
     {
-        image: '',
+        image: 'fruits3',
         name: 'Watermelon',
         category: 'fruits',
         price: 50
     },
     {
-        image: '',
+        image: 'tulsi',
         name: 'Tulsi',
         category: 'herbs',
         price: 59
     },
     {
-        image: '',
+        image: 'termeric',
         name: 'Turmeric',
         category: 'herbs',
         price: 75
     },
     {
-        image: '',
+        image: 'alo',
         name: 'Alo-Juice',
         category: 'herbs',
         price: 150
