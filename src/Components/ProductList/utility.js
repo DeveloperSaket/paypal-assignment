@@ -8,7 +8,7 @@ export function current(list = []) {
 };
 
 export function prev(list = [], currentIndexPointer) {
-    const length = list.length();
+    const length = list.length;
     const indexPointer = currentIndexPointer - 1;
 
     if (indexPointer === -1) {
@@ -25,7 +25,7 @@ export function prev(list = [], currentIndexPointer) {
 }
 
 export function next(list, currentIndexPointer) {
-    const length = list.length();
+    const length = list.length;
     const indexPointer = currentIndexPointer + 1;
 
     if (indexPointer === length) {
