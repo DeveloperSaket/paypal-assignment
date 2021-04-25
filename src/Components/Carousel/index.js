@@ -5,7 +5,14 @@ function Carousel({ itemObj }) {
     const { list } = itemObj;
     return (
         <>
-            {list.map(i => <div className='test-center'><div>{i.name}</div>{i.price}<div></div> </div>)}
+            {list.map((i, index) => {
+                return (<div className={index !== 1 ? 'card' : 'card-selected'}>
+                    <div className='cardImage'></div>
+                    <div>{i.name}</div>
+                    {i.price}
+                </div>)
+            }
+            )}
         </>
     );
 }

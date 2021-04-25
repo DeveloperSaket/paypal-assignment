@@ -3,10 +3,6 @@
   min-height: 100vh;
 }
 
-.test-center{
-  text-align: center;
-}
-
 .Category {
   display: flex;
   align-items: center;

@@ -1,0 +1,24 @@
+
+.card{
+    text-align: center;
+    width: 19%;
+    height: 40vh;
+    border: 2px solid blanchedalmond;
+    border-radius: 1em;
+  }
+
+.card-selected{
+    text-align: center;
+    width: 25%;
+    height: 55vh;
+    border: 2px solid blanchedalmond;
+    border-radius: 1em;
+  }
+
+  .cardImage{
+    text-align: center;
+    width: 100%;
+    height: 70%;
+    border-bottom: 2px solid blue;
+  }
+  
