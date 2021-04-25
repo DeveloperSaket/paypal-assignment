@@ -32,7 +32,7 @@ function ProductList() {
                         }
                     }}>&#8678;</button>
                 </div>
-                <Carousel itemObj={currentList} />
+                <Carousel itemObj={currentList} filteredList={filteredList} />
                 <div>
                     <button className='arrow' onClick={() => {
                         const itemObj = next(filteredList, currentList.pointer);

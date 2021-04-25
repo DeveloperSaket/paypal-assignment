@@ -7,86 +7,86 @@ const items = [
     },
     {
         image: '',
-        name: 'carrot',
+        name: 'Carrot',
         category: 'vagitable',
         price: 11
     },
     {
         image: '',
-        name: 'broccoli',
+        name: 'Broccoli',
         category: 'vagitable',
         price: 14
     },
     {
         image: '',
-        name: 'asparagus',
+        name: 'Asparagus',
         category: 'vagitable',
         price: 17
     },
     {
         image: '',
-        name: 'cauliflower',
+        name: 'Cauliflower',
         category: 'vagitable',
         price: 19
     },
     {
         image: '',
-        name: 'corn',
+        name: 'Corn',
         category: 'vagitable',
         price: 11
     },
     {
         image: '',
-        name: 'cucumber',
+        name: 'Cucumber',
         category: 'vagitable',
         price: 10
     },
     {
         image: '',
-        name: 'eggplant',
+        name: 'Eggplant',
         category: 'vagitable',
         price: 20
     },
     {
         image: '',
-        name: 'green pepper',
+        name: 'Green Pepper',
         category: 'vagitable',
         price: 10
     },
 
     {
         image: '',
-        name: 'grapes',
+        name: 'Grapes',
         category: 'fruits',
-        price: 50
+        price: 57
     },
     {
         image: '',
-        name: 'lime',
+        name: 'Lime',
         category: 'fruits',
-        price: 50
+        price: 40
     },
     {
         image: '',
-        name: 'lemon',
+        name: 'Lemon',
         category: 'fruits',
-        price: 50
+        price: 20
     },
     {
         image: '',
-        name: 'banana',
+        name: 'Banana',
         category: 'fruits',
-        price: 50
+        price: 25
     },
     {
         image: '',
-        name: 'apple',
+        name: 'Apple',
         category: 'fruits',
-        price: 50
+        price: 150
     },
     {
         image: '',
-        name: 'watermelon',
+        name: 'Watermelon',
         category: 'fruits',
         price: 50
     },
