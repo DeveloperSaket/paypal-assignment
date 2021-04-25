@@ -1,30 +1,24 @@
 const items = [
     {
-        image: 'veggie',
-        name: 'Cucumber',
-        category: 'vagitable',
-        price: 10
-    },
-    {
-        image: 'veggie2',
+        image: 'carrot',
         name: 'Carrot',
         category: 'vagitable',
         price: 11
     },
     {
-        image: 'veggie',
+        image: 'broccoli',
         name: 'Broccoli',
         category: 'vagitable',
         price: 14
     },
     {
-        image: 'veggie2',
+        image: 'asparagus',
         name: 'Asparagus',
         category: 'vagitable',
         price: 17
     },
     {
-        image: 'veggie',
+        image: 'cauliflower',
         name: 'Cauliflower',
         category: 'vagitable',
         price: 19
@@ -36,19 +30,19 @@ const items = [
         price: 11
     },
     {
-        image: 'veggie',
+        image: 'cucumber',
         name: 'Cucumber',
         category: 'vagitable',
         price: 10
     },
     {
-        image: 'veggie2',
+        image: 'eggplant',
         name: 'Eggplant',
         category: 'vagitable',
         price: 20
     },
     {
-        image: 'veggie',
+        image: 'GreenPepper',
         name: 'Green Pepper',
         category: 'vagitable',
         price: 10

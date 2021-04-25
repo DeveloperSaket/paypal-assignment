@@ -70,6 +70,12 @@
    /* transition: all 0.3s ease-out; */
 }
 
+.card-container-init{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
 .card-container-init2{
     display: flex;
     align-items: center;
