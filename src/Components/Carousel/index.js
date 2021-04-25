@@ -21,8 +21,10 @@ function Carousel({ itemObj, filteredList }) {
                                     borderTopRightRadius: '1em'
                                 }} />
                         </div>
-                        <div>{i.name}</div>
-                        $ {i.price}
+                        <div className='cardData'>
+                            <div>{i.name}</div>
+                            <div>$ {i.price}</div>
+                        </div>
                     </div>)
                 }
                 )}

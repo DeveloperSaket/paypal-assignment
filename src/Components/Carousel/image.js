@@ -6,6 +6,7 @@ import termeric from "../../asset/termeric.jpg";
 import tulsi from "../../asset/tulsi.jpg";
 import veggie from "../../asset/veggie.jpg";
 import veggie2 from "../../asset/veggie2.jpg";
+import corn from "../../asset/corn.jpg";
 
 const getImage = (imgId) => {
     switch (imgId) {
@@ -25,6 +26,8 @@ const getImage = (imgId) => {
             return veggie;
         case 'veggie2':
             return veggie2;
+        case 'corn':
+            return corn;
 
         default:
             return Alo;

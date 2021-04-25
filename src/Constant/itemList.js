@@ -30,7 +30,7 @@ const items = [
         price: 19
     },
     {
-        image: 'veggie2',
+        image: 'corn',
         name: 'Corn',
         category: 'vagitable',
         price: 11
