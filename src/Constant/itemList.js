@@ -49,37 +49,37 @@ const items = [
     },
 
     {
-        image: 'fruits',
+        image: 'grapes',
         name: 'Grapes',
         category: 'fruits',
         price: 57
     },
     {
-        image: 'fruits2',
+        image: 'lime',
         name: 'Lime',
         category: 'fruits',
         price: 40
     },
     {
-        image: 'fruits3',
-        name: 'Lemon',
-        category: 'fruits',
-        price: 20
-    },
-    {
-        image: 'fruits',
+        image: 'banana',
         name: 'Banana',
         category: 'fruits',
         price: 25
     },
     {
-        image: 'fruits2',
+        image: 'apple',
         name: 'Apple',
         category: 'fruits',
         price: 150
     },
     {
-        image: 'fruits3',
+        image: 'lemon',
+        name: 'Lemon',
+        category: 'fruits',
+        price: 20
+    },
+    {
+        image: 'watermelon',
         name: 'Watermelon',
         category: 'fruits',
         price: 50

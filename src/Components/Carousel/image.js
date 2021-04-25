@@ -1,11 +1,14 @@
+import Grapes from "../../asset/grapes.jpg";
+import Lime from "../../asset/lime.jpg";
+import Lemon from "../../asset/lemon.jpg";
+import Banana from "../../asset/banana.jpg";
+import Apple from "../../asset/apple.jpg";
+import Watermelon from "../../asset/watermelon.jpg";
+
 import Alo from "../../asset/alo.jpg";
-import fruits from "../../asset/fruits.jpg";
-import fruits2 from "../../asset/fruits2.jpg";
-import fruits3 from "../../asset/fruits3.jpg";
 import termeric from "../../asset/termeric.jpg";
 import tulsi from "../../asset/tulsi.jpg";
-import veggie from "../../asset/veggie.jpg";
-import veggie2 from "../../asset/veggie2.jpg";
+
 import corn from "../../asset/corn.jpg";
 import Cucumber from "../../asset/cucumber.jpg";
 import Cauliflower from "../../asset/cauliflower.jpg";
@@ -29,10 +32,7 @@ const getImage = (imgId) => {
             return termeric;
         case 'tulsi':
             return tulsi;
-        case 'veggie':
-            return veggie;
-        case 'veggie2':
-            return veggie2;
+
         case 'corn':
             return corn;
         case 'cucumber':
@@ -49,6 +49,19 @@ const getImage = (imgId) => {
             return Carrot;
         case 'GreenPepper':
             return GreenPepper;
+
+        case 'grapes':
+            return Grapes;
+        case 'lime':
+            return Lime;
+        case 'lemon':
+            return Lemon;
+        case 'banana':
+            return Banana;
+        case 'apple':
+            return Apple;
+        case 'watermelon':
+            return Watermelon;
 
         default:
             return Alo;
