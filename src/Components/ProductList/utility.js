@@ -1,10 +1,10 @@
 export function current(list = []) {
     const length = list.length;
     if (length === 0) {
-        return { list, pointer: -1 };
+        return { list, pointer: -1, type: 'init' };
     }
     const indexPointer = (length > 2) ? 1 : 0;
-    return indexPointer === 0 ? { list, pointer: indexPointer } : { list: list.slice(0, 3), pointer: indexPointer };
+    return indexPointer === 0 ? { list, pointer: indexPointer, type: 'init' } : { list: list.slice(0, 3), pointer: indexPointer, type: 'init' };
 };
 
 export function prev(list = [], currentIndexPointer) {
@@ -16,13 +16,13 @@ export function prev(list = [], currentIndexPointer) {
             case 0:
                 lst = list.slice(indexPointer, indexPointer + 2);
                 lst.unshift(list[length - 1]);
-                return { list: lst, pointer: indexPointer };
+                return { list: lst, pointer: indexPointer, type: 'left' };
             case -1:
                 lst = list.slice(length - 2, length);
                 lst.push(list[0]);
-                return { list: lst, pointer: length - 1 };
+                return { list: lst, pointer: length - 1, type: 'left' };
             default:
-                return { list: list.slice(indexPointer - 1, indexPointer + 2), pointer: indexPointer };
+                return { list: list.slice(indexPointer - 1, indexPointer + 2), pointer: indexPointer, type: 'left' };
         }
 
     } else {
@@ -39,13 +39,13 @@ export function next(list, currentIndexPointer) {
             case length - 1:
                 lst = list.slice(length - 2, length);
                 lst.push(list[0]);
-                return { list: lst, pointer: indexPointer };
+                return { list: lst, pointer: indexPointer, type: 'right' };
             case length:
                 lst = list.slice(0, 2);
                 lst.unshift(list[length - 1]);
-                return { list: lst, pointer: 0 };
+                return { list: lst, pointer: 0, type: 'right' };
             default:
-                return { list: list.slice(indexPointer - 1, indexPointer + 2), pointer: indexPointer };
+                return { list: list.slice(indexPointer - 1, indexPointer + 2), pointer: indexPointer, type: 'right' };
         }
 
     } else {
